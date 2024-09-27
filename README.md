@@ -1,6 +1,6 @@
 # 🕒 Digital Clock Project
 
-![Digital Clock Screenshot](path/to/screenshot-ui.png) <!-- Replace with the actual path to your screenshot -->
+![Digital Clock Screenshot](path/to/Screenshot-ui.png) <!-- Replace with the actual path to your screenshot -->
 
 ## 🌟 Description
 
