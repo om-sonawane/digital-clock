@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Behind content */
+    background-size: cover;
+}
+
+#clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#clock {
+    font-family: monospace;
+    font-size: 6.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(5px);
+    background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+/* Social Links positioned near the bottom */
+.scard {
+    position: absolute;
+    bottom: 80px; /* Position above the footer */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
+}
+
+.btn--outline {
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Styling for social media icons */
+.social-link img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Footer fixed at the bottom */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    /*background: rgba(0, 0, 0, 0.5); /* Slight transparency for footer */
+    z-index: 1;
+}
+
+.footer__link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+/* Visitor counter and last-updated text */
+.last-updated {
+    color: white;
+    font-size: 0.9rem;
+}
