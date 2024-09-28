@@ -45,7 +45,7 @@ body {
 /* Social Links positioned near the bottom */
 .scard {
     position: absolute;
-    bottom: 80px; /* Position above the footer */
+    bottom: 80px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -61,7 +61,6 @@ body {
     cursor: pointer;
 }
 
-/* Styling for social media icons */
 .social-link img {
     width: 40px;
     height: 40px;
@@ -75,7 +74,7 @@ body {
     text-align: center;
     color: white;
     padding: 10px;
-    /*background: rgba(0, 0, 0, 0.5); /* Slight transparency for footer */
+    background: rgba(0, 0, 0, 0.5); /* Slight transparency for footer */
     z-index: 1;
 }
 
@@ -88,8 +87,44 @@ body {
     text-decoration: underline;
 }
 
-/* Visitor counter and last-updated text */
 .last-updated {
     color: white;
     font-size: 0.9rem;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+/* For screens smaller than 768px (tablets, small laptops) */
+@media (max-width: 768px) {
+    #clock {
+        font-size: 4.5rem; /* Reduce font size for tablets */
+    }
+    .social-link img {
+        width: 35px; /* Adjust size of icons */
+        height: 35px;
+    }
+    .btn--outline {
+        padding: 8px; /* Slightly smaller button */
+    }
+}
+
+/* For screens smaller than 480px (mobile phones) */
+@media (max-width: 480px) {
+    #clock {
+        font-size: 3.5rem; /* Further reduce font size for mobiles */
+    }
+    .social-link img {
+        width: 30px; /* Adjust size of icons for mobiles */
+        height: 30px;
+    }
+    .btn--outline {
+        padding: 6px; /* Smaller button for mobile */
+    }
+    .scard {
+        bottom: 60px; /* Adjust position for smaller screens */
+        gap: 5px; /* Reduce gap between icons */
+    }
+    .footer {
+        padding: 5px; /* Reduce padding for the footer */
+    }
 }
